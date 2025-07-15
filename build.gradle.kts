@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
+    java
     application
 }
 
@@ -8,14 +8,14 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
-    implementation("com.github.pengrad:java-telegram-bot-api:6.9.0")
+    implementation("org.telegram:telegrambots-longpolling:9.0.0")
+    implementation("org.telegram:telegrambots-client:9.0.0")
 }
 
 application {
-    mainClass.set("bot.MainKt")
+    mainClass.set("ru.comgrid.bot.MainKt")
 }
 
-kotlin {
-    jvmToolchain(21)
+java {
+    version = 21
 }
