@@ -1,0 +1,18 @@
+# Gradle
+.gradle/
+build/
+
+# Kotlin/Java
+*.class
+
+# IntelliJ
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Env
+.env
