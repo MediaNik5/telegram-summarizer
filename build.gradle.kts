@@ -8,14 +8,15 @@ repositories {
 }
 
 dependencies {
-    implementation("org.telegram:telegrambots-longpolling:9.0.0")
-    implementation("org.telegram:telegrambots-client:9.0.0")
+    implementation("org.telegram:telegrambots:6.9.7.1")
+    implementation("com.theokanning.openai-gpt3-java:service:0.18.2")
+    implementation("io.github.amikos-tech:chromadb-java-client:0.1.7")
 }
 
 application {
-    mainClass.set("ru.comgrid.bot.MainKt")
+    mainClass.set("ru.comgrid.bot.Main")
 }
 
 java {
-    version = 21
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
