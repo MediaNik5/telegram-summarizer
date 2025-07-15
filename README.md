@@ -1,6 +1,7 @@
-# Telegram Summarizer
+# AI-Powered Personal Notes Telegram Bot
 
-This is a minimal Kotlin-based Telegram bot project using Gradle Kotlin DSL.
+This project implements a Telegram bot that stores your notes and answers
+questions about them using a Retrieval-Augmented Generation workflow.
 
 ## Building
 
@@ -10,7 +11,16 @@ This is a minimal Kotlin-based Telegram bot project using Gradle Kotlin DSL.
 
 ## Running
 
-Set the `TELEGRAM_BOT_TOKEN` environment variable and run:
+Set the following environment variables before starting the bot:
+
+- `TELEGRAM_BOT_TOKEN` – your Telegram bot token
+- `OPENAI_API_KEY` – OpenAI API key
+- `CHROMA_URL` – URL of a running ChromaDB instance (for example
+  `http://localhost:8000` when using the persistent client)
+
+Optionally you can set `TELEGRAM_BOT_USERNAME` to override the displayed name.
+
+Start the bot with:
 
 ```
 ./gradlew run
